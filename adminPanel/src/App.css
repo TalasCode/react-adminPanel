@@ -1,0 +1,18 @@
+/* Layout.css */
+.layout-container {
+  display: flex; /* Use flexbox to align Sidebar and main-content */
+  height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+  width: 250px; /* Fixed width for Sidebar */
+  background-color: #343a40; /* Sidebar background color */
+  color: white;
+}
+
+.main-content {
+  flex: 1; /* Allow main content to take up remaining space */
+  padding: 20px; /* Padding for spacing */
+  background-color: #f4f7fa; /* Background color for main content */
+  overflow-y: auto; /* Allow vertical scrolling */
+}

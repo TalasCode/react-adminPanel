@@ -1,0 +1,104 @@
+.add-role {
+    width: 100%; /* Take full width of the parent */
+    max-width: 1000px; /* Optional: Set a max width */
+    margin: 100px auto; 
+    padding: 60px; /* Internal padding */
+    background: white; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.input-field {
+    width: 100%; /* Ensure input fields take the full width */
+    padding: 10px; /* Internal padding for input fields */
+    margin-top: 10px; /* Margin above input fields */
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.form-group {
+    width: 100%; /* Ensure form groups take full width */
+    margin-bottom: 16px; /* Space between form groups */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Space below labels */
+    display: block; 
+}
+
+.form-group input {
+    width: 100%; /* Inputs should take full width */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners for inputs */
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+h2 {
+    margin: 20px 0 10px; /* Margin for headings */
+    font-size: 1.5em; /* Font size for headings */
+    color: #333; /* Text color */
+}
+
+.permissions-group {
+    margin-bottom: 20px; /* Space below permission groups */
+}
+
+.permission-category {
+    margin-bottom: 16px; /* Space below permission categories */
+    padding: 10px; /* Internal padding */
+    border: 1px solid #e0e0e0; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    background: #f9f9f9; /* Background color */
+}
+
+.permission-category label {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.permission-category input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+.sub-permissions {
+    margin-left: 200px; /* Indent sub-permissions */
+    margin-top: 10px; /* Space above sub-permissions */
+}
+
+.sub-permissions label {
+    display: block; /* Block display for labels */
+    margin: 5px 0; /* Space between sub-permission labels */
+}
+
+.add-btn {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.add-btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.add-btn:disabled {
+    background-color: #ccc; /* Grey background when disabled */
+    cursor: not-allowed; /* Not-allowed cursor when disabled */
+}   

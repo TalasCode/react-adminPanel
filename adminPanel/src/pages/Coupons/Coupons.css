@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Coupon Manager Container */
+.coupon-manager {
+    max-width: 800px;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.add-coupon-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-coupon-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-coupon-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-coupon-form button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-coupon-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Coupon Table Styles */
+.coupon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.coupon-table th, .coupon-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.coupon-table th {
+    background-color: #02bdb0; /* Dark Green */
+    color: white;
+}
+
+.coupon-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.coupon-table tr:hover {
+    background-color: #e0f7fa; /* Light Blue */
+}
+
+/* Active Status Indicator */
+.coupon-table label {
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .coupon-manager {
+        padding: 10px;
+    }
+
+    .add-coupon-form input,
+    .add-coupon-form button {
+        font-size: 14px;
+    }
+}

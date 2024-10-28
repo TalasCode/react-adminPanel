@@ -1,0 +1,9 @@
+.add-category-price {
+    display: flex;
+    gap: 40px; 
+    align-items: center; /* Align items vertically in the center */
+}
+
+.add-btn {
+    margin-left: auto; /* Push the button to the right */
+}

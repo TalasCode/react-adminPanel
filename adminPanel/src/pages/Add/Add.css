@@ -1,0 +1,74 @@
+.add {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: var(--light-text);
+    font-size: 18px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add form {
+    display: flex;
+    flex-direction: column; /* Column layout */
+    gap: 30px; /* Increase gap between elements */
+}
+
+.add-img-upload img {
+    width: 200px;
+    height: auto;
+}
+
+.add-product-name input, 
+.add-product-description textarea {
+    padding: 15px;
+    width: 100%; /* Full width */
+    font-size: 18px;
+    pointer-events: auto; /* Ensure inputs can be interacted with */
+}
+.add-category-price {
+    display: flex;
+    gap: 40px; 
+    align-items: center; /* Align items vertically in the center */
+}
+
+.add-btn {
+    margin-left: 90%; /* Push the button to the right */
+}
+.add-category-price {
+    display: flex;
+    gap: 40px; 
+}
+
+.add-category-price select, 
+.add-category-price input {
+    max-width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    pointer-events: auto; /* Ensure selects and inputs can be interacted with */
+}
+
+.add-btn {
+    max-width: 150px;
+    border: none;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: darkgray;
+}
+
+label img[src*="assets/upload_area"] {
+    filter: var(--upload);
+}
+.add-product-name input, 
+.add-product-description textarea {
+    pointer-events: auto; /* Ensure inputs can be interacted with */
+}
