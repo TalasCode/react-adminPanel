@@ -1,6 +1,6 @@
 .add-role {
     width: 100%; /* Take full width of the parent */
-    max-width: 1000px; /* Optional: Set a max width */
+    max-width: 10000px; /* Optional: Set a max width */
     margin: 100px auto; 
     padding: 60px; /* Internal padding */
     background: white; /* Background color */

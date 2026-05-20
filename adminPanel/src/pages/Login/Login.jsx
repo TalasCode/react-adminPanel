@@ -56,11 +56,7 @@ const Login = () => {
             <div className="login-card">
                 <h2>Login</h2>
                 <input
-                    type="text"
-                    placeholder="Username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    className="login-input"
+                  type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} className="login-input" style={{ marginLeft: '-7px' }}
                 />
                 <input
                     type="password"

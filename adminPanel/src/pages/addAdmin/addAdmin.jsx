@@ -90,6 +90,7 @@ const token = localStorage.getItem("token");
                         value={formData.username}
                         onChange={handleChange}
                         required
+                        style={{ marginLeft: '-8px', marginTop: '0px' }}
                     />
                 </div>
                 <div className="form-group">
@@ -122,6 +123,7 @@ const token = localStorage.getItem("token");
                         name="streetAddress"
                         value={formData.streetAddress}
                         onChange={handleChange}
+                        style={{ marginLeft: '-8px', marginTop: '-3px' }}
                     />
                 </div>
                 <div className="form-group">
@@ -132,6 +134,7 @@ const token = localStorage.getItem("token");
                         name="city"
                         value={formData.city}
                         onChange={handleChange}
+                        style={{ marginLeft: '-8px', marginTop: '-3px' }}
                     />
                 </div>
                 <div className="form-group">
@@ -142,6 +145,7 @@ const token = localStorage.getItem("token");
                         name="state"
                         value={formData.state}
                         onChange={handleChange}
+                        style={{ marginLeft: '-8px', marginTop: '-3px' }}
                     />
                 </div>
                 <div className="form-group">
@@ -152,6 +156,7 @@ const token = localStorage.getItem("token");
                         name="postalCode"
                         value={formData.postalCode}
                         onChange={handleChange}
+                        style={{ marginLeft: '-8px', marginTop: '-3px' }}
                     />
                 </div>
                 <div className="form-group">
@@ -162,6 +167,7 @@ const token = localStorage.getItem("token");
                         name="country"
                         value={formData.country}
                         onChange={handleChange}
+                        style={{ marginLeft: '-8px', marginTop: '-3px' }}
                     />
                 </div>
                 <div className="form-group">

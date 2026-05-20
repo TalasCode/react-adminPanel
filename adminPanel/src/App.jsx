@@ -29,7 +29,7 @@ const App = () => {
 
           {/* Routes with Sidebar */}
           <Route element={<Layout />}>
-          <Route path="/add-role" element={<AddRole style={{ width: '100%', maxWidth: '2000px', margin: '0 auto' }} />} />
+          <Route path="/add-role" element={<AddRole style={{ width: '100%', maxWidth: '20000px', margin: '0 auto' }} />} />
             <Route path="/add" element={<Add url={url} />} />
             <Route path='/add-admin' element={<AddAdmin url={url}/>}/>
             <Route path='/add-category' element={<AddCategory url={url}/>}/>
