@@ -1,134 +1,166 @@
 # QuickPick Admin Dashboard
 
-Admin dashboard for managing a QuickPick-style e-commerce platform. The project is a React + Vite frontend focused on internal operations such as product management, order tracking, coupon management, admin-user creation, and role-based access control.
+A modern React-based admin dashboard built for managing an e-commerce platform through a centralized operational interface.
 
-## Overview
+The dashboard provides tools for product management, order processing, user administration, role-based permissions, and store configuration workflows.
 
-This repository contains the admin interface used to manage store data and operational workflows. The UI authenticates against a separate backend API, stores the login token in `localStorage`, and shows sidebar actions based on permissions returned for the logged-in user's role.
+Built with React + Vite and integrated with a backend API using JWT authentication and permission-based access control.
 
-The frontend app lives in `adminPanel/`.
+---
 
 ## Features
 
-- Admin login with token-based authentication
-- Role-based sidebar navigation using backend permissions
-- Product inventory listing with low-stock highlighting
-- Stock updates for existing items
-- Product creation with category and brand selection
-- Order listing with editable order status
-- Coupon creation and activation/deactivation
-- Category creation
-- Brand creation
-- Admin-user creation with role assignment
-- Role creation with grouped permission mapping
-- Light/dark visual mode toggle stored in `localStorage`
+### Authentication & Access Control
+
+* Secure login with token-based authentication
+* Role-based access control (RBAC)
+* Dynamic sidebar rendering based on user permissions
+* Admin user creation and role assignment
+
+### Product Management
+
+* Product inventory listing
+* Low-stock indicators
+* Product creation and updates
+* Category and brand assignment
+
+### Store Operations
+
+* Order tracking and status management
+* Coupon creation and activation controls
+* Category management
+* Brand management
+
+### Administration
+
+* Role creation
+* Permission mapping
+* Admin account management
+
+### User Experience
+
+* Light/Dark mode support
+* Persistent UI preferences using localStorage
+* Responsive dashboard interface
+
+---
+
+## Architecture
+
+```text
+Admin Dashboard (React + Vite)
+            ↓
+Axios API Layer
+            ↓
+JWT Authentication
+            ↓
+ASP.NET Core Backend API
+            ↓
+SQL Server Database
+```
+
+---
 
 ## Tech Stack
 
-- React 18
-- Vite 5
-- React Router DOM
-- Axios
-- React Toastify
-- ESLint
+* React 18
+* Vite
+* React Router DOM
+* Axios
+* React Toastify
+* JavaScript
+* JWT Authentication
+
+---
 
 ## Project Structure
 
 ```text
-.
-|-- README.md
-`-- adminPanel
-    |-- package.json
-    |-- public
-    `-- src
-        |-- components
-        |-- pages
-        `-- assets
+quickpick-admin-dashboard/
+
+├── adminPanel
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── assets
+│   │
+│   ├── public
+│   └── package.json
+│
+└── README.md
 ```
+
+---
 
 ## Main Screens
 
-- `Login`
-- `List Items`
-- `Add Items`
-- `Orders`
-- `Coupon Manager`
-- `Add Category`
-- `Add Brand`
-- `Add Role`
-- `Add Admin`
+* Login
+* Dashboard
+* Product Management
+* Orders
+* Coupons
+* Categories
+* Brands
+* Roles
+* Admin Users
 
-## Prerequisites
-
-- Node.js 18+
-- npm
-- A running backend API at `https://localhost:7274`
+---
 
 ## Getting Started
 
-1. Open the frontend folder:
+Clone repository:
+
+```bash
+git clone <repo-url>
+```
+
+Navigate to the project:
 
 ```bash
 cd adminPanel
 ```
 
-2. Install dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+Start development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open the local Vite URL shown in the terminal.
-
-## Available Scripts
-
-From `adminPanel/`:
-
-```bash
-npm run dev
-npm run build
-npm run preview
-npm run lint
-```
+---
 
 ## Backend Integration
 
-The frontend currently calls a backend hosted locally on:
+The dashboard connects to a backend API handling:
 
-```text
-https://localhost:7274
-```
+* Authentication
+* Users
+* Roles
+* Permissions
+* Products
+* Orders
+* Categories
+* Brands
+* Coupons
 
-Examples of API areas used by the app:
+---
 
-- `/api/Login`
-- `/api/User`
-- `/api/UserPermission`
-- `/api/Role`
-- `/api/Item`
-- `/api/Order`
-- `/api/Brand`
-- `/api/Category`
-- `/api/Coupon`
+## Future Improvements
 
-## Notes Before Publishing
+* Environment variable support
+* Analytics dashboard
+* Image upload service
+* Notifications system
+* Advanced reporting
+* Real-time order updates
 
-- API URLs are currently hardcoded instead of being driven by environment variables.
-- Authentication state is stored in `localStorage`.
-- The repo currently contains only the admin frontend, not the backend API.
-- Product, category, and brand image handling is wired around local public asset paths.
-- The sidebar includes an offer-related entry, but the corresponding page is not wired in the current route setup.
+---
 
-## Suggested Repository Names
+## Why I built this
 
-- `quickpick-admin-dashboard`
-- `quickpick-admin-panel`
-- `ecommerce-admin-rbac-dashboard`
-
-Recommended: `quickpick-admin-dashboard`
+This project was built to strengthen frontend architecture skills while building real administrative workflows commonly found in production e-commerce systems.
